@@ -7,6 +7,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 const app = createApp(App)
 
 const router = createRouter({
+  base: "/cours-piano",
   history: createWebHistory(),
   routes,
   scrollBehavior (to, from, savedPosition) {
