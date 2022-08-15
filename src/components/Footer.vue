@@ -3,11 +3,11 @@
   <div class="w-full md:w-1/3 p-5 flex flex-col items-center">
     <div>
       <div class="text-xl font-bold mb-3">Explorer</div>
-      <span class="inline-block my-1">Accueil</span><br />
-      <span class="inline-block my-1">Cours enfants</span><br />
-      <span class="inline-block my-1">Cours adultes et ados</span><br />
-      <span class="inline-block my-1">Tarifs/Horaires</span><br />
-      <span class="inline-block my-1">Contact</span><br />
+      <router-link to="/" class="inline-block my-1">Accueil</router-link><br />
+      <router-link to="/children" class="inline-block my-1">Cours enfants</router-link><br />
+      <router-link to="/adult" class="inline-block my-1">Cours adultes et ados</router-link><br />
+      <router-link to="/pricing" class="inline-block my-1">Tarifs/Horaires</router-link><br />
+      <router-link to="/contact" class="inline-block my-1">Contact</router-link><br />
     </div>
   </div>
   <div class="w-full md:w-1/3 p-5 flex flex-col items-center">
