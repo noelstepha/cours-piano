@@ -8,7 +8,7 @@ const app = createApp(App)
 
 const router = createRouter({
   base: "/cours-piano",
-  history: createWebHistory(),
+  history: createWebHistory(process.env.NODE_ENV === "production" ? "/cours-piano/" : "/"),
   routes,
   scrollBehavior (to, from, savedPosition) {
     //https://router.vuejs.org/guide/advanced/scroll-behavior.html
