@@ -1,6 +1,6 @@
 <template>
   <CatchPhrase bg-class="bg-pricing">
-    <div class="h-60 flex justify-center items-center text-center w-full">Tarifs et Horaires des cours de piano</div>
+    <div class="h-80 flex justify-center items-center text-center w-full">Tarifs et Horaires des cours de piano</div>
   </CatchPhrase>
   <section class="p-10 flex flex-wrap">
     <div class="w-full md:w-1/2 p-5">

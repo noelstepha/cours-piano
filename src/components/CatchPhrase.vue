@@ -26,14 +26,14 @@ export default {
 }
 
 .bg-children {
-  background-image: url("/img/cours-enfant.jpg");
+  background-image: url("/img/fond-musical.jpg");
 }
 
 .bg-adult {
-  background-image: url("/img/cours-adulte.jpg");
+  background-image: url("/img/sheet-flower.jpg");
 }
 
 .bg-pricing {
-  background-image: url("/img/sheet-flower.jpg");
+  background-image: url("/img/bg-notes.jpg");
 }
 </style>

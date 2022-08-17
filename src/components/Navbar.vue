@@ -46,15 +46,56 @@
           <div class="hidden md:block md:ml-6">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <router-link to="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Accueil</router-link>
+              <router-link
+                  to="/"
+                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
+                  :class="{
+                      'text-gray-300': $router.currentRoute.value.path !== '/',
+                      'bg-gray-900': $router.currentRoute.value.path === '/',
+                      'text-white': $router.currentRoute.value.path === '/'
+                   }"
+                  aria-current="page"
+              >Accueil</router-link>
 
-              <router-link to="/children" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cours enfant</router-link>
+              <router-link
+                  to="/children"
+                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
+                  :class="{
+                      'text-gray-300': $router.currentRoute.value.path !== '/children',
+                      'bg-gray-900': $router.currentRoute.value.path === '/children',
+                      'text-white': $router.currentRoute.value.path === '/children'
+                   }"
+              >Cours enfant</router-link>
 
-              <router-link to="/adult" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Cours adultes et ados</router-link>
+              <router-link
+                  to="/adult"
+                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
+                  :class="{
+                      'text-gray-300': $router.currentRoute.value.path !== '/adult',
+                      'bg-gray-900': $router.currentRoute.value.path === '/adult',
+                      'text-white': $router.currentRoute.value.path === '/adult'
+                   }"
+              >Cours adultes et ados</router-link>
 
-              <router-link to="/pricing" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tarifs / Horaires</router-link>
+              <router-link
+                  to="/pricing"
+                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
+                  :class="{
+                      'text-gray-300': $router.currentRoute.value.path !== '/pricing',
+                      'bg-gray-900': $router.currentRoute.value.path === '/pricing',
+                      'text-white': $router.currentRoute.value.path === '/pricing'
+                   }"
+              >Tarifs / Horaires</router-link>
 
-              <router-link to="/contact" href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</router-link>
+              <router-link
+                  to="/contact"
+                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
+                  :class="{
+                      'text-gray-300': $router.currentRoute.value.path !== '/contact',
+                      'bg-gray-900': $router.currentRoute.value.path === '/contact',
+                      'text-white': $router.currentRoute.value.path === '/contact'
+                   }"
+              >Contact</router-link>
             </div>
           </div>
         </div>
@@ -65,15 +106,51 @@
     <div :class="{hidden: menuOpen, block: !menuOpen}" class="md:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <router-link to="/" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Accueil</router-link>
+        <router-link
+            to="/"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            :class="{
+              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/',
+              'bg-gray-900 text-white': $router.currentRoute.value.path === '/',
+            }"
+            aria-current="page"
+        >Accueil</router-link>
 
-        <router-link to="/children" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Cours enfant</router-link>
+        <router-link
+            to="/children"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            :class="{
+              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/children',
+              'bg-gray-900 text-white': $router.currentRoute.value.path === '/children',
+            }"
+        >Cours enfant</router-link>
 
-        <router-link to="/adult" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Cours adultes et ados</router-link>
+        <router-link
+            to="/adult"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            :class="{
+              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/adult',
+              'bg-gray-900 text-white': $router.currentRoute.value.path === '/adult',
+            }"
+        >Cours adultes et ados</router-link>
 
-        <router-link to="/pricing" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Tarifs / Horaires</router-link>
+        <router-link
+            to="/pricing"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            :class="{
+              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/pricing',
+              'bg-gray-900 text-white': $router.currentRoute.value.path === '/pricing',
+            }"
+        >Tarifs / Horaires</router-link>
 
-        <router-link to="/contact" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</router-link>
+        <router-link
+            to="/contact"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            :class="{
+              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/contact',
+              'bg-gray-900 text-white': $router.currentRoute.value.path === '/contact',
+            }"
+        >Contact</router-link>
       </div>
     </div>
   </nav>
@@ -84,8 +161,11 @@ export default {
   name: "Navbar.vue",
   data() {
     return {
-      menuOpen: false
+      menuOpen: true
     }
+  },
+  created() {
+    console.log(this.$router.currentRoute.value.path)
   },
   methods: {
     toggle() {

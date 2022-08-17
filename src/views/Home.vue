@@ -52,18 +52,22 @@ import Button from "@/components/Button.vue";
             Peu importe le niveau de votre enfant, débutant ou non, qu'il soit intéressé par le piano classique ou le clavier électrique,
             le professeur pianiste revient sur les bases et fondamentaux du piano.<br />
           </div>
-          <Button class="w-max" text="Lire plus"></Button>
+          <Button class="w-max">
+            <router-link to="/children">Lire plus</router-link>
+          </Button>
         </div>
       </div>
       <div class="m-auto max-w-screen-xl flex flex-col-reverse md:flex-row">
         <div class="w-full md:w-1/2 p-10 flex flex-col">
           <Title text="Cours adultes et adolescents"></Title>
           <div class="flex-grow">
-            Ce cours de piano s’adresse aux adultes et aux adolescents à partir de 15 ans.<br />
-            Grace à une pédagogie moderne, durant les cours, vous allez apprendre à jouer du piano, mais aussi apprendre comment pratiquer pendant la semaine, au travers d'outils spécifiques.
-            S'entrainer ne nécessite pas que de l'obstination, il faut aussi la bonne méthode.<br />
+            Ce cours de piano s’adresse aux adultes et aux adolescents à partir de 15 ans.
+            La méthode d'enseignement est conçue pour les débutants et les élèves expérimentés.<br />
+            Quel que soit votre niveau, débutant ou expérimenté, il y aura toujours un cours de piano qui vous correspondra.
           </div>
-          <Button class="w-max" text="Lire plus"></Button>
+          <Button class="w-max">
+            <router-link to="/adult">Lire plus</router-link>
+          </Button>
         </div>
         <div class="w-full md:w-1/2 h-80 bg-center bg-cover adult-img"></div>
       </div>

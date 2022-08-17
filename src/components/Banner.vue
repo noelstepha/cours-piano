@@ -9,12 +9,12 @@
         <span class="text-2xl uppercase font-light">Cours de piano pour adultes et enfants à Toulouse</span><br />
 
         <div class="flex flex-wrap justify-center mt-4">
-          <router-link class="banner-btn text-base m-2 p-2 uppercase" to="#lesson">
-            Cours de piano
-          </router-link>
-          <button class="banner-btn text-base m-2 p-2 uppercase">
-            Contactez nous
-          </button>
+          <Button class="banner-btn text-base m-2 p-2 uppercase">
+            <router-link to="#lesson">Cours de piano</router-link>
+          </Button>
+          <Button class="banner-btn text-base m-2 p-2 uppercase" to="/contact">
+            <router-link to="/contact">Contactez nous</router-link>
+          </Button>
         </div>
       </div>
     </div>
@@ -40,8 +40,10 @@
 </template>
 
 <script>
+import Button from "@/components/Button.vue"
 export default {
-  name: "Banner"
+  name: "Banner",
+  components:{Button}
 }
 </script>
 

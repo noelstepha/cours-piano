@@ -1,6 +1,7 @@
 <template>
   <button class="bg-irish text-white p-2 px-4 uppercase">
-    {{ text }}
+    <span v-if="text">{{ text }}</span>
+    <slot></slot>
   </button>
 </template>
 

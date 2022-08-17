@@ -19,7 +19,7 @@
           31300 Toulouse<br />
         </div>
         05 62 48 38 33<br />
-        espace.blanchers@gmail.com
+        <a href="mailto:espace.blanchers@gmail.com">espace.blanchers@gmail.com</a>
       </div>
       <div class="w-full md:w-1/2 px-5  flex flex-col items-center text-center">
         <Title text="Moyen d'accès"></Title>
