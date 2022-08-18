@@ -1,0 +1,30 @@
+<template>
+  <section
+      class="flex items-center mb-12 bg-cover bg-center w-full text-5xl italic text-white font-baskerville bg-online">
+    <div class="h-80 flex justify-center items-center text-center w-full goup">Cours de piano à distance</div>
+  </section>
+  <section>
+    <div class="container mx-auto mb-10">
+      <div class="flex flex-wrap justify-stretch mx-5 md:mx-10 lg:mx-20">
+        <p class="p-10">
+          En complément des cours traditionnels, ils ont lieu à distance via WhatsApp, FaceTime, Zoom,… avec votre smartphone ou tablette,… quelque soit votre niveau ou votre âge.
+          Pas besoin d’équipement particulier.
+          Ces cours sont accessibles de façon régulière ou ponctuelle, en cas d’incapacité de se déplacer pour un cours en présentiel.
+          Des fichiers audios vous sont transmis pour compléter le travail personnel.
+        </p>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "OnlineLesson"
+}
+</script>
+
+<style scoped>
+.bg-online {
+  background-image: url('/img/online.jpg');
+}
+</style>

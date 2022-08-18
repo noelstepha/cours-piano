@@ -6,17 +6,55 @@
     <div class="w-full md:w-1/2 p-5">
       <Title text="Tarifs"></Title>
       <p>
-        Cours de groupe pour adultes et enfants :<br />
-        94€ par mois pour 1H de cours par semaine en cours de groupe<br /><br />
-
-        Cours individuels uniquement pour les adultes :<br />
-        94€ par mois pour 45 min de cours par semaine en cours individuel<br /><br />
-
-
-        Le tarif des cours est calculé sur l'année scolaire et divisé en mensualités.
+        Le tarif des cours est calculé sur l'année scolaire et divisé en mensualités.<br />
         De ce fait, le tarif est le même pour tous les mois de l'année scolaire.<br />
         Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br /><br />
       </p>
+      <table class="my-5">
+        <tbody>
+        <tr class="bg-irish text-white">
+          <td>
+            <div class="flex justify-center items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+              </svg>
+            </div>
+          </td>
+          <td class="p-5">
+            <div>Enfants</div>
+            <div>(8 à 14 ans)</div>
+          </td>
+          <td class="p-5">
+            <div>Adultes</div>
+            <div>(> 14 ans)</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-irish text-white p-5">
+            <div>Cours de groupe</div>
+            <div>1H / semaine</div>
+          </td>
+          <td class="p-5 text-center">
+            96 €
+          </td>
+          <td class="p-5 text-center">
+            96 €
+          </td>
+        </tr>
+        <tr>
+          <td class="bg-irish text-white p-5">
+            <div>Cours individuels</div>
+            <div>45min / semaine</div>
+          </td>
+          <td class="p-5 text-center">
+            -
+          </td>
+          <td class="p-5 text-center">
+            96 €
+          </td>
+        </tr>
+        </tbody>
+      </table>
     </div>
     <div class="w-full md:w-1/2 p-5">
       <Title text="Horaires"></Title>
@@ -45,5 +83,7 @@ export default {
 </script>
 
 <style scoped>
-
+table tr td {
+  border: 1px solid #c9bfbf4a;
+}
 </style>

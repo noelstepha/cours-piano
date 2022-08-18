@@ -78,6 +78,16 @@
               >Cours adultes et ados</router-link>
 
               <router-link
+                  to="/online"
+                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
+                  :class="{
+                      'text-gray-300': $router.currentRoute.value.path !== '/online',
+                      'bg-gray-900': $router.currentRoute.value.path === '/online',
+                      'text-white': $router.currentRoute.value.path === '/online'
+                   }"
+              >Cours à distance</router-link>
+
+              <router-link
                   to="/pricing"
                   class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
                   :class="{
@@ -123,7 +133,7 @@
               'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/children',
               'bg-gray-900 text-white': $router.currentRoute.value.path === '/children',
             }"
-        >Cours enfant</router-link>
+        >Cours enfants</router-link>
 
         <router-link
             to="/adult"
@@ -135,13 +145,22 @@
         >Cours adultes et ados</router-link>
 
         <router-link
+            to="/online"
+            class="block px-3 py-2 rounded-md text-base font-medium"
+            :class="{
+              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/online',
+              'bg-gray-900 text-white': $router.currentRoute.value.path === '/online',
+            }"
+        >Cours à distance</router-link>
+
+        <router-link
             to="/pricing"
             class="block px-3 py-2 rounded-md text-base font-medium"
             :class="{
               'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/pricing',
               'bg-gray-900 text-white': $router.currentRoute.value.path === '/pricing',
             }"
-        >Tarifs / Horaires</router-link>
+        >Tarifs et Horaires</router-link>
 
         <router-link
             to="/contact"

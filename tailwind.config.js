@@ -10,7 +10,8 @@ module.exports = {
       },
       colors: {
         irish: "rgba(57, 116, 125)",
-        darkIrish: '#323d44'
+        darkIrish: '#323d44',
+        overwhite: "rgba(255,255,255, 0.5)"
       }
     },
   },

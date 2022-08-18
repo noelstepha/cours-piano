@@ -9,10 +9,10 @@
         <h1 class="text-2xl uppercase font-light text-center mt-20 mb-0">Cours de piano pour adultes et enfants à Toulouse</h1>
 
         <div class="flex flex-wrap justify-center mt-4">
-          <Button class="banner-btn text-base m-2 p-2 uppercase">
+          <Button class="text-base m-2 p-2 uppercase" dark>
             <router-link to="#lesson">Cours de piano</router-link>
           </Button>
-          <Button class="banner-btn text-base m-2 p-2 uppercase" to="/contact">
+          <Button class="text-base m-2 p-2 uppercase" to="/contact" dark>
             <router-link to="/contact">Contactez nous</router-link>
           </Button>
         </div>
@@ -58,10 +58,6 @@ export default {
 
 .logo {
   max-width: 80px;
-}
-
-.banner-btn {
-  background-color: rgba(57, 116, 125);
 }
 
 .banner-text {

@@ -4,6 +4,7 @@ import AdultLesson from "@/views/AdultLesson.vue";
 import ChildrenLesson from "@/views/ChildrenLesson.vue";
 import Pricing from "@/views/Pricing.vue";
 import Contact from "@/views/Contact.vue";
+import OnlineLesson from "@/views/OnlineLesson.vue";
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
@@ -21,6 +22,11 @@ export const routes = [
     path: '/children',
     meta: { title: 'Cours de piano pour enfants' },
     component: ChildrenLesson,
+  },
+  {
+    path: '/online',
+    meta: { title: 'Cours de piano en ligne' },
+    component: OnlineLesson,
   },
   {
     path: '/pricing',
