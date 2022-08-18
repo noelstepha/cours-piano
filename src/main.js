@@ -7,7 +7,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 const app = createApp(App)
 
 const router = createRouter({
-  base: "/cours-piano",
   history: createWebHistory(process.env.NODE_ENV === "production" ? "/cours-piano/" : "/"),
   routes,
   scrollBehavior (to, from, savedPosition) {
@@ -21,6 +20,11 @@ const router = createRouter({
     }
   }
 })
+
+const DEFAULT_TITLE = 'Ecole de piano Blanchers sur Toulouse';
+router.beforeEach((to) => {
+  document.title = to.meta.title || DEFAULT_TITLE;
+});
 
 app.use(router)
 app.mount('#app')

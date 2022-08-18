@@ -7,10 +7,10 @@ import Contact from "@/views/Contact.vue";
 
 /** @type {import('vue-router').RouterOptions['routes']} */
 export const routes = [
-  { path: '/', component: Home, meta: { title: 'Home' } },
+  { path: '/', component: Home, meta: { title: 'Ecole de piano Blanchers sur Toulouse' } },
   {
     path: '/adult',
-    meta: { title: 'Cours adulte et ados' },
+    meta: { title: 'Cours de piano pour adultes' },
     component: AdultLesson,
     // example of route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
@@ -19,17 +19,17 @@ export const routes = [
   },
   {
     path: '/children',
-    meta: { title: 'Cours enfants' },
+    meta: { title: 'Cours de piano pour enfants' },
     component: ChildrenLesson,
   },
   {
     path: '/pricing',
-    meta: { title: 'Tarif' },
+    meta: { title: 'Tarif des cours de piano' },
     component: Pricing,
   },
   {
     path: '/contact',
-    meta: { title: 'Contact' },
+    meta: { title: 'Contact école de piano' },
     component: Contact,
   },
   { path: '/:path(.*)', component: NotFound },

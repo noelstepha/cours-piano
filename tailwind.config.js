@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Libre Baskerville"', '"Open Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         irish: "rgba(57, 116, 125)",

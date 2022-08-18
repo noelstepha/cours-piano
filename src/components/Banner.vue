@@ -6,7 +6,7 @@
       <div class="banner-text text-6xl md:text-8xl">
         <span class="font-baskerville italic">Espace musical des Blanchers</span><br />
 
-        <span class="text-2xl uppercase font-light">Cours de piano pour adultes et enfants à Toulouse</span><br />
+        <h1 class="text-2xl uppercase font-light text-center mt-20 mb-0">Cours de piano pour adultes et enfants à Toulouse</h1>
 
         <div class="flex flex-wrap justify-center mt-4">
           <Button class="banner-btn text-base m-2 p-2 uppercase">

@@ -34,7 +34,7 @@ import Button from "@/components/Button.vue";
         <svg xmlns="http://www.w3.org/2000/svg" class="inline h-12 w-12 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"  aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
         </svg>
-        Le cours d'essai vous est offert
+        Un cours d'essai vous est offert
         <svg xmlns="http://www.w3.org/2000/svg" class="inline h-12 w-12 mx-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"  aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
         </svg>
@@ -46,12 +46,12 @@ import Button from "@/components/Button.vue";
         <div class="w-full md:w-1/2 h-80 bg-center bg-cover children-img"></div>
         <div class="w-full md:w-1/2 p-10 md:pt-0 flex flex-col">
           <Title text="Cours enfants"></Title>
-          <div class="flex-grow">
+          <p class="flex-grow">
             Ce cours pour enfants s’adresse aux enfants de 8 à 14 ans et se passe en cours collectif de 2 à 4 élèves.<br />
             Notre professeur de musique accompagnera votre enfant dans son apprentissage du piano et son éveil musical grâce à son esprit pédagogue. <br />
             Peu importe le niveau de votre enfant, débutant ou non, qu'il soit intéressé par le piano classique ou le clavier électrique,
             le professeur pianiste revient sur les bases et fondamentaux du piano.<br />
-          </div>
+          </p>
           <Button class="w-max">
             <router-link to="/children">Lire plus</router-link>
           </Button>
@@ -60,11 +60,11 @@ import Button from "@/components/Button.vue";
       <div class="m-auto max-w-screen-xl flex flex-col-reverse md:flex-row">
         <div class="w-full md:w-1/2 p-10 flex flex-col">
           <Title text="Cours adultes et adolescents"></Title>
-          <div class="flex-grow">
+          <p class="flex-grow">
             Ce cours de piano s’adresse aux adultes et aux adolescents à partir de 15 ans.
             La méthode d'enseignement est conçue pour les débutants et les élèves expérimentés.<br />
             Quel que soit votre niveau, débutant ou expérimenté, il y aura toujours un cours de piano qui vous correspondra.
-          </div>
+          </p>
           <Button class="w-max">
             <router-link to="/adult">Lire plus</router-link>
           </Button>
@@ -93,7 +93,7 @@ import Button from "@/components/Button.vue";
     >
       <div class="w-1/3 h-40 bg-center bg-contain bg-no-repeat covid-img"></div>
       <div class="w-2/3">
-        <Title text="Covid"></Title>
+        <Title text="Covid-19"></Title>
 
         <div>
           Nous avons installé toute une panoplie de protections sous forme de parois de plexiglass et nettoyant désinfectant, afin que vous puissiez suivre vos cours avec toutes les protections sanitaires qui s'imposent. <br /><br />

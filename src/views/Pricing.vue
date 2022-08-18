@@ -1,11 +1,11 @@
 <template>
   <CatchPhrase bg-class="bg-pricing">
-    <div class="h-80 flex justify-center items-center text-center w-full">Tarifs et Horaires des cours de piano</div>
+    <h1 class="h-80 flex justify-center items-center text-center w-full">Tarifs et Horaires des cours de piano</h1>
   </CatchPhrase>
   <section class="p-10 flex flex-wrap">
     <div class="w-full md:w-1/2 p-5">
       <Title text="Tarifs"></Title>
-      <div>
+      <p>
         Cours de groupe pour adultes et enfants :<br />
         94€ par mois pour 1H de cours par semaine en cours de groupe<br /><br />
 
@@ -16,7 +16,7 @@
         Le tarif des cours est calculé sur l'année scolaire et divisé en mensualités.
         De ce fait, le tarif est le même pour tous les mois de l'année scolaire.<br />
         Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br /><br />
-      </div>
+      </p>
     </div>
     <div class="w-full md:w-1/2 p-5">
       <Title text="Horaires"></Title>
