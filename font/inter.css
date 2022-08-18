@@ -1,18 +1,21 @@
 @font-face {
   font-family: 'Libre Baskerville';
   font-weight: bold;
-  url('LibreBaskerville-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url('LibreBaskerville-Bold.woff') format('woff'),
+       url('LibreBaskerville-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 @font-face {
   font-family: 'Libre Baskerville';
   font-weight: normal;
   font-style: italic;
-  url('LibreBaskerville-Italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url('LibreBaskerville-Italic.woff') format('woff'),
+       url('LibreBaskerville-Italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 @font-face {
   font-family: 'Libre Baskerville';
   font-weight: normal;
-  url('LibreBaskerville-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  src: url('LibreBaskerville-Regular.woff') format('woff'),
+       url('LibreBaskerville-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
