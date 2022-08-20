@@ -65,7 +65,7 @@
                       'bg-gray-900': $router.currentRoute.value.path === '/children',
                       'text-white': $router.currentRoute.value.path === '/children'
                    }"
-              >Cours enfant</router-link>
+              >Cours enfants</router-link>
 
               <router-link
                   to="/adult"

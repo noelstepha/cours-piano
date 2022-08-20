@@ -8,8 +8,8 @@
         v-if="!reverse"
         :class="{ [bgClass]: true }"
     ></div>
-    <div class="w-full md:w-1/2 py-5 flex flex-col"
-    :class="{ 'pt-10': !first, 'pb-10': !last, 'pl-10': !reverse, 'pr-10': reverse} ">
+    <div class="w-full md:w-1/2 py-5 pl-10 flex flex-col"
+    :class="{ 'pt-10': !first, 'pb-10': !last, 'xl:pl-0': reverse, 'pr-10': reverse} ">
       <Title :text="title"></Title>
       <p class="flex-grow">
         <slot />

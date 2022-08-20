@@ -10,7 +10,7 @@ import PagePreview from "@/components/PagePreview.vue";
   <div class="bg-white">
     <Banner />
     <section class="flex justify-center">
-      <AnimatedGradient class="w-3/4 md:w-1/3 min-h-80 my-10 shadow-md">
+      <AnimatedGradient class="w-4/5 md:w-1/2 xl:w-1/3 min-h-80 my-10 shadow-md">
         <div class="flex flex-col items-center">
           <div class="w-full p-4 text-center">
               <h1 class="text-3xl my-2 font-baskerville italic">C'est bientôt la rentrée !</h1><br/>

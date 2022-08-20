@@ -1,14 +1,16 @@
 <template>
-  <CatchPhrase bg-class="bg-pricing">
-    <h1 class="h-80 flex justify-center items-center text-center w-full">Tarifs et Horaires des cours de piano</h1>
-  </CatchPhrase>
+  <section
+      class="flex items-center mb-12 bg-cover bg-center w-full text-5xl italic text-white font-baskerville bg-pricing">
+    <h1 class="h-80 flex justify-center items-center text-center w-full goup">Tarifs et Horaires des cours de piano</h1>
+  </section>
   <section class="p-10 flex flex-wrap">
     <div class="w-full md:w-1/2 p-5">
       <Title text="Tarifs"></Title>
       <p>
         Le tarif des cours est calculé sur l'année scolaire et divisé en mensualités.<br />
         De ce fait, le tarif est le même pour tous les mois de l'année scolaire.<br />
-        Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br /><br />
+        Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br />
+        Les inscriptions sont possible tout au long de l’année.
       </p>
       <table class="my-5">
         <tbody>
@@ -53,6 +55,18 @@
             96 €
           </td>
         </tr>
+        <tr>
+          <td class="bg-irish text-white p-5">
+            <div>Frais d'inscription</div>
+            <div class="text-xs">(1ere année seulement)</div>
+          </td>
+          <td class="p-5 text-center">
+            25 €
+          </td>
+          <td class="p-5 text-center">
+            25 €
+          </td>
+        </tr>
         </tbody>
       </table>
     </div>
@@ -85,5 +99,9 @@ export default {
 <style scoped>
 table tr td {
   border: 1px solid #c9bfbf4a;
+}
+
+.bg-pricing {
+  background-image: url('/img/bg-notes2.jpg');
 }
 </style>
