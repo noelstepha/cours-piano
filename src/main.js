@@ -2,12 +2,12 @@ import { createApp } from 'vue'
 import './tailwind.css'
 import App from './App.vue'
 import { routes } from './routes.js'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const app = createApp(App)
 
 const router = createRouter({
-  history: createWebHistory(process.env.NODE_ENV === "production" ? "/cours-piano/" : "/"),
+  history: createWebHashHistory(),
   routes,
   scrollBehavior (to, from, savedPosition) {
     //https://router.vuejs.org/guide/advanced/scroll-behavior.html

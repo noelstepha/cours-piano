@@ -9,7 +9,7 @@
       <p>
         Le tarif des cours est calculé sur l'année scolaire et divisé en mensualités.<br />
         De ce fait, le tarif est le même pour tous les mois de l'année scolaire.<br />
-        Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br />
+        Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br /><br />
         Les inscriptions sont possible tout au long de l’année.
       </p>
       <table class="my-5">

@@ -13,12 +13,12 @@
             Ce cours pour enfants s’adresse aux enfants de 8 à 14 ans et se passe en cours collectif de 2 à 4 élèves.<br />
             Notre professeur de musique accompagnera votre enfant dans son apprentissage du piano et son éveil musical grâce
             à son esprit pédagogue.<br />
-            Peu importe le niveau de votre enfant, débutant ou non, qu'il soit intéressé par le piano classique ou le
+            Peu importe le niveau de votre enfant, débutant ou non, qu'il soit intéressé par le piano traditionnel ou le
             clavier électrique,
             le professeur pianiste revient sur les bases et fondamentaux du piano.
           </p>
 
-          <LessonValueBox title="Un choix de morceaux adapté" class="w-full md:w-1/2 3xl:w-1/4 py-5" color="#f57853" row>
+          <LessonValueBox title="Un choix de morceaux adaptés" class="w-full md:w-1/2 3xl:w-1/4 py-5" color="#f57853" row>
             La méthode d'enseignement propose des morceaux écrits spécialement pour les enfants de cet âge, ce qui les
             rend plus ludiques.
             Les morceaux sont aussi adaptés au développement physiologique des enfants.
