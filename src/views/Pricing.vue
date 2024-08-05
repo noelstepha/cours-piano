@@ -10,7 +10,7 @@
         Le tarif des cours est calculé sur l'année scolaire et divisé en mensualités.<br />
         De ce fait, le tarif est le même pour tous les mois de l'année scolaire.<br />
         Dans le cas où vous souhaiteriez interrompre l'apprentissage en cours d'année, vous n'êtes pas engagé pour une année scolaire entière.<br /><br />
-        Les inscriptions sont possible tout au long de l’année.
+        Les inscriptions sont possibles tout au long de l’année.
       </p>
       <table class="my-5">
         <tbody>
@@ -37,10 +37,10 @@
             <div>1H / semaine</div>
           </td>
           <td class="p-5 text-center">
-            96 €
+            120 € / mois
           </td>
           <td class="p-5 text-center">
-            96 €
+            120 € / mois
           </td>
         </tr>
         <tr>
@@ -52,7 +52,7 @@
             -
           </td>
           <td class="p-5 text-center">
-            96 €
+            120 € / mois
           </td>
         </tr>
         <tr>
@@ -82,6 +82,11 @@
         Les cours se font uniquement sur rendez-vous, avec le même horaire pour chaque semaine.<br />
         Les cours sont dispensés tout au long de la journée jusqu'en soirée.<br />
         Il y a possibilité d'avoir cours entre midi et 14h, et le soir après le travail.<br /><br />
+        Périodes de vacances scolaires :<br />
+        Les cours continuent pendant les vacances de la Toussaint.<br />
+        Il n'y a pas cours pendant les vacances de Noël.<br />
+        Il y a cours pendant la première semaine des vacances d'hiver.<br />
+        Il y a cours pendant la première semaine des vacances de printemps.<br />
       </div>
     </div>
   </section>
