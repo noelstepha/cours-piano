@@ -23,12 +23,7 @@
             </div>
           </td>
           <td class="p-5">
-            <div>Enfants</div>
-            <div>(8 à 14 ans)</div>
-          </td>
-          <td class="p-5">
             <div>Adultes</div>
-            <div>(> 14 ans)</div>
           </td>
         </tr>
         <tr>
@@ -39,17 +34,11 @@
           <td class="p-5 text-center">
             120 € / mois
           </td>
-          <td class="p-5 text-center">
-            120 € / mois
-          </td>
         </tr>
         <tr>
           <td class="bg-irish text-white p-5">
             <div>Cours individuels</div>
             <div>45min / semaine</div>
-          </td>
-          <td class="p-5 text-center">
-            -
           </td>
           <td class="p-5 text-center">
             120 € / mois
@@ -63,9 +52,6 @@
           <td class="p-5 text-center">
             25 €
           </td>
-          <td class="p-5 text-center">
-            25 €
-          </td>
         </tr>
         </tbody>
       </table>
@@ -73,11 +59,22 @@
     <div class="w-full md:w-1/2 p-5">
       <Title text="Horaires"></Title>
       <div>
-        Lundi	 10H00 - 21H30<br />
-        Mardi	 10H00 - 21H30<br />
-        Mercredi 	 10H00 - 21H30<br />
-        Jeudi	 10H00 - 21H30<br />
-        Vendredi 	10H00 - 20H00<br /><br />
+        <div class="w-full flex">
+          <div class="w-1/4">
+            Lundi	 <br />
+            Mardi	 <br />
+            Mercredi <br />
+            Jeudi	 <br />
+            Vendredi 	<br /><br />
+          </div>
+          <div class="w-3/4">
+          10H00 - 21H30<br />
+          10H00 - 21H30<br />
+          10H00 - 21H30<br />
+          10H00 - 21H30<br />
+          10H00 - 20H00<br /><br />
+          </div>
+        </div>
 
         Les cours se font uniquement sur rendez-vous, avec le même horaire pour chaque semaine.<br />
         Les cours sont dispensés tout au long de la journée jusqu'en soirée.<br />

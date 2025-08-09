@@ -4,20 +4,22 @@ import Title from "@/components/Title.vue";
 import CatchPhrase from "@/components/CatchPhrase.vue";
 import AnimatedGradient from "@/components/AnimatedGradient.vue";
 import PagePreview from "@/components/PagePreview.vue";
+const today = new Date();
+const isWelcomeTextVisible = today.getMonth() > 6;
 </script>
 
 <template>
   <div class="bg-white">
     <Banner />
     
-    <section class="flex justify-center">
+    <section class="flex justify-center" v-if="isWelcomeTextVisible">
       <AnimatedGradient class="w-4/5 md:w-1/2 xl:w-1/3 min-h-80 my-10 shadow-md">
         <div class="flex flex-col items-center">
           <div class="w-full p-4 text-center">
               <h1 class="text-3xl my-2 font-baskerville italic">C'est bientôt la rentrée !</h1><br/>
               <p class="text-lg">
-                Vous pouvez nous contacter à partir du <br /><span class="text-xl font-baskerville italic">vendredi 30 Août 2024</span><br /> pour tout renseignement.<br /><br />
-                Les cours reprendront à partir du <br /><span class="text-xl font-baskerville italic">lundi 2 Septembre 2024</span>.<br/><br />
+                Vous pouvez nous contacter à partir du <br /><span class="text-xl font-baskerville italic">Vendredi 29 Août 2025</span><br /> pour tout renseignement.<br /><br />
+                Les cours reprendront à partir du <br /><span class="text-xl font-baskerville italic">Lundi 1er Septembre 2025</span>.<br/><br />
                 Inscription tout au long de l'année.
               </p>
 
@@ -60,15 +62,8 @@ import PagePreview from "@/components/PagePreview.vue";
       </div>
     </CatchPhrase>
     <section class="mb-12" id="lesson">
-      <PagePreview title="Cours enfants" bg-class="children-img" to="/children" reverse first>
-        Ce cours pour enfants s’adresse aux enfants de 8 à 14 ans et se passe en cours collectif de 2 à 4 élèves.
-        Notre professeur de musique accompagnera votre enfant dans son apprentissage du piano et son éveil musical grâce à son esprit pédagogue.
-        Peu importe le niveau de votre enfant, débutant ou non, qu'il soit intéressé par le piano classique ou le clavier électrique,
-        le professeur pianiste revient sur les bases et fondamentaux du piano.<br />
-      </PagePreview>
-      <PagePreview title="Cours adultes et adolescents" bg-class="adult-img" to="/adult">
-        Ce cours de piano s’adresse aux adultes et aux adolescents à partir de 15 ans.
-        La méthode d'enseignement est conçue pour les débutants et les élèves expérimentés.<br />
+      <PagePreview title="Cours adultes" bg-class="adult-img" to="/adult">
+        Ce cours de piano s’adresse aux adultes. La méthode d'enseignement est conçue pour les débutants et les élèves expérimentés.<br />
         Quel que soit votre niveau, débutant ou expérimenté, il y aura toujours un cours de piano qui vous correspondra.
       </PagePreview>
       <PagePreview title="Cours à distance" bg-class="online-img" to="/online" reverse last>
@@ -97,14 +92,12 @@ import PagePreview from "@/components/PagePreview.vue";
     <section
         class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8 flex flex-wrap"
     >
-      <div class="w-1/3 h-40 bg-center bg-contain bg-no-repeat covid-img"></div>
-      <div class="w-2/3">
-        <Title text="Covid-19"></Title>
-
-        <div>
-          Nous avons installé toute une panoplie de protections sous forme de parois de plexiglass et nettoyant désinfectant, afin que vous puissiez suivre vos cours avec toutes les protections sanitaires qui s'imposent. <br /><br />
-          Pendant les périodes de confinement ou couvre-feu, des cours de piano en ligne en mode visioconférence avec un professeur en direct, sont toujours disponibles.
-        </div>
+      <div class="w-full mb-10 md:mb-0 md:w-1/5 h-52 bg-center bg-contain bg-no-repeat emoji"></div>
+      <div class="quote">
+        <blockquote>
+          <p><span>La musique donne une âme à nos cœurs et des ailes à la pensée.</span></p>
+          <cite class="text-xl">— Platon</cite>
+        </blockquote>
       </div>
     </section>
   </div>
@@ -116,11 +109,58 @@ import PagePreview from "@/components/PagePreview.vue";
   background-image: url('/img/music-design.jpg');
 }
 
-.covid-img {
-  background-image: url('/img/covid.png');
+.emoji {
+  background-image: url('/img/note-emoji.png');
 }
 
-.bg-notes {
-  background-image: url("/img/gradient-2.jpeg");
+.quote {
+  width: 70%;
+  overflow: hidden;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
+
+.quote blockquote {
+  padding-left: 34px;
+}
+
+.quote blockquote h1 {
+  font-size: 4rem;
+}
+.quote blockquote p span {
+  font-style: italic;
+  margin-bottom: 0;
+  background: linear-gradient(135deg, #42d392, #64acff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Libre Baskerville';
+}
+
+.quote blockquote p::before,
+.quote blockquote p::after {
+  content: "“";
+  font-family: Georgia;
+  font-size: 6rem;
+  margin: -2rem 1rem 0 -3rem;
+  position: absolute;
+  opacity: 0.5;
+  background: linear-gradient(135deg, #42d392, #64acff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quote blockquote p::after {
+  content: "”";
+  margin: -1rem -4rem 0 0;
+}
+
+.quote blockquote cite {
+  font-size: 1.5rem;
+  color: #0c2071;
+}
+
+
 </style>

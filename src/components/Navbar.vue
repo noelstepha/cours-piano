@@ -58,16 +58,6 @@
               >Accueil</router-link>
 
               <router-link
-                  to="/children"
-                  class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
-                  :class="{
-                      'text-gray-300': $router.currentRoute.value.path !== '/children',
-                      'bg-gray-900': $router.currentRoute.value.path === '/children',
-                      'text-white': $router.currentRoute.value.path === '/children'
-                   }"
-              >Cours enfants</router-link>
-
-              <router-link
                   to="/adult"
                   class="px-3 py-2 hover:bg-gray-700 hover:text-white rounded-md text-sm font-medium"
                   :class="{
@@ -125,15 +115,6 @@
             }"
             aria-current="page"
         >Accueil</router-link>
-
-        <router-link
-            to="/children"
-            class="block px-3 py-2 rounded-md text-base font-medium"
-            :class="{
-              'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/children',
-              'bg-gray-900 text-white': $router.currentRoute.value.path === '/children',
-            }"
-        >Cours enfants</router-link>
 
         <router-link
             to="/adult"
