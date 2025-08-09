@@ -1,7 +1,7 @@
 <template>
   <section
       class="flex items-center mb-12 bg-cover bg-center w-full text-5xl italic text-white font-baskerville bg-adult">
-    <h1 class="h-80 flex justify-center items-center text-center w-full">Cours pour adultes et adolescents </h1>
+    <h1 class="h-80 flex justify-center items-center text-center w-full">Cours pour adultes</h1>
   </section>
   <section>
 
@@ -9,13 +9,12 @@
       <div class="flex flex-wrap align-start justify-start mx-5 md:mx-10 lg:mx-20">
         <FreeLesson class="mb-10" center color-rotation="164"/>
         <div class="p-10">
-          Ce cours de piano s’adresse aux adultes et aux adolescents à partir de 15 ans.<br />
+          Ce cours de piano s’adresse aux adultes.<br />
           La méthode d'enseignement est conçue pour les débutants et les élèves expérimentés.<br />
           Quel que soit votre niveau, débutant ou expérimenté, il y aura toujours un cours de piano qui vous correspondra.
         </div>
         <LessonValueBox title="Des cours individuels ou collectifs" class="w-full" color="#bd9667" row>
-          Les cours de piano se déroulent en cours collectifs pour les enfants,
-          par contre les adultes peuvent choisir entre les cours individuels et les cours collectifs.<br />
+          Les adultes peuvent choisir entre les cours individuels et les cours collectifs.<br />
           Les cours collectifs se font avec des élèves de même âge et de même niveau pour que tous les élèves puissent évoluer
           de manière identique avec une émulation globale.<br />
           Chaque élève ayant un instrument pour jouer.

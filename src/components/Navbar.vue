@@ -65,7 +65,7 @@
                       'bg-gray-900': $router.currentRoute.value.path === '/adult',
                       'text-white': $router.currentRoute.value.path === '/adult'
                    }"
-              >Cours adultes et ados</router-link>
+              >Cours adultes</router-link>
 
               <router-link
                   to="/online"
@@ -123,7 +123,7 @@
               'text-gray-300 hover:bg-gray-700 hover:text-white': $router.currentRoute.value.path !== '/adult',
               'bg-gray-900 text-white': $router.currentRoute.value.path === '/adult',
             }"
-        >Cours adultes et ados</router-link>
+        >Cours adultes</router-link>
 
         <router-link
             to="/online"
