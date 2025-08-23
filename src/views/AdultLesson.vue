@@ -39,7 +39,7 @@
         <LessonValueBox title="Un répertoire adapté à vos goûts musicaux" class="w-full" color="#bd9667" row>
           Grâce à des musiques variées et de tout style, les élèves progressent tout en se faisant plaisir.<br />
           Ayant plus de 15 ans d'expérience d'enseignement et bien plus, de pratique de la musique,
-          je peux vous proposer un répertoire de musiques, large et varié, quelque soit votre âge et votre univers musical.
+          on peut vous proposer un répertoire de musiques, large et varié, quelque soit votre âge et votre univers musical.
         </LessonValueBox>
 
         <LessonValueBox title="Instruments de cours" class="w-full" color="#bd9667" row>

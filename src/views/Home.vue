@@ -5,7 +5,47 @@ import CatchPhrase from "@/components/CatchPhrase.vue";
 import AnimatedGradient from "@/components/AnimatedGradient.vue";
 import PagePreview from "@/components/PagePreview.vue";
 const today = new Date();
-const isWelcomeTextVisible = today.getMonth() > 6;
+const isWelcomeTextVisible = today.getMonth() > 5;
+
+function getDates(year = new Date().getFullYear()) {
+  // Dernier jour d'août (0 septembre = 31 août)
+  const lastAugustDay = new Date(year, 8, 0);
+
+  // Calcul du dernier vendredi
+  const dayWeek = lastAugustDay.getDay(); // 0=Dimanche, 5=Vendredi
+  const daysToRemove = dayWeek < 5 ? dayWeek + 2 : dayWeek - 5;
+
+  const lastFriday = new Date(lastAugustDay);
+  lastFriday.setDate(lastAugustDay.getDate() - daysToRemove);
+
+  // Calcul du premier lundi de septembre
+  const firstSeptemberDay = new Date(year, 8, 1); // 1 septembre
+  const firstDayOfWeek = firstSeptemberDay.getDay();
+  // Si ce n'est pas un lundi (1), calculer les jours à ajouter pour atteindre lundi
+  const daysToAdd = firstDayOfWeek === 1 ? 0 : (8 - firstDayOfWeek) % 7;
+
+  const firstMonday = new Date(firstSeptemberDay);
+  firstMonday.setDate(firstSeptemberDay.getDate() + daysToAdd);
+
+  // Noms des jours et mois en français
+  const frenchDays = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+  const frenchMonths = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+
+  const fridayDay = lastFriday.getDate();
+  const fridayName = frenchDays[lastFriday.getDay()];
+  const fridayMonth = frenchMonths[lastFriday.getMonth()];
+
+  const mondayDay = firstMonday.getDate();
+  const mondayName = frenchDays[firstMonday.getDay()];
+  const mondayMonth = frenchMonths[firstMonday.getMonth()];
+
+  return {
+    friday: `${fridayName} ${fridayDay} ${fridayMonth} ${year}`,
+    monday: `${mondayName} ${mondayDay} ${mondayMonth} ${year}`
+  };
+}
+
+const { friday, monday } = getDates()
 </script>
 
 <template>
@@ -18,8 +58,8 @@ const isWelcomeTextVisible = today.getMonth() > 6;
           <div class="w-full p-4 text-center">
               <h1 class="text-3xl my-2 font-baskerville italic">C'est bientôt la rentrée !</h1><br/>
               <p class="text-lg">
-                Vous pouvez nous contacter à partir du <br /><span class="text-xl font-baskerville italic">Vendredi 29 Août 2025</span><br /> pour tout renseignement.<br /><br />
-                Les cours reprendront à partir du <br /><span class="text-xl font-baskerville italic">Lundi 1er Septembre 2025</span>.<br/><br />
+                Vous pouvez nous contacter à partir du <br /><span class="text-xl font-baskerville italic">{{ friday }}</span><br /> pour tout renseignement.<br /><br />
+                Les cours reprendront à partir du <br /><span class="text-xl font-baskerville italic">{{ monday }}</span>.<br/><br />
                 Inscription tout au long de l'année.
               </p>
 
@@ -38,7 +78,7 @@ const isWelcomeTextVisible = today.getMonth() > 6;
         <Title text="L'école"></Title>
 
         <div>
-          Notre école de piano, l'Espace Musical des Blanchers, est installée à Toulouse, dans le quartier de Saint-Cyprien, et propose des cours de piano de tous niveaux à partir de 8 ans.<br />
+          Notre école de piano, l'Espace Musical des Blanchers, est installée à Toulouse, dans le quartier de Saint-Cyprien, et propose des cours de piano de tous niveaux pour adultes.<br />
 
           Nous vous proposons des cours de piano, piano numérique, clavinova, ou clavier pour tous les âges du débutant au plus confirmé.<br />
 

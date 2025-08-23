@@ -28,8 +28,8 @@
         </tr>
         <tr>
           <td class="bg-irish text-white p-5">
-            <div>Cours de groupe</div>
-            <div>1H / semaine</div>
+            <div>Cours individuels</div>
+            <div>45min / semaine</div>
           </td>
           <td class="p-5 text-center">
             120 € / mois
@@ -37,8 +37,8 @@
         </tr>
         <tr>
           <td class="bg-irish text-white p-5">
-            <div>Cours individuels</div>
-            <div>45min / semaine</div>
+            <div>Cours de groupe</div>
+            <div>1H / semaine</div>
           </td>
           <td class="p-5 text-center">
             120 € / mois

@@ -8,9 +8,9 @@
       <div class="flex flex-wrap justify-stretch mx-5 md:mx-10 lg:mx-20">
         <FreeLesson class="mb-10" center color-rotation="150"/>
         <p class="p-10">
-          En complément des cours traditionnels, ils ont lieu à distance via WhatsApp, FaceTime, Zoom,… avec votre smartphone ou tablette,… quelque soit votre niveau ou votre âge.
-          Pas besoin d’équipement particulier.
-          Ces cours sont accessibles de façon régulière ou ponctuelle, en cas d’incapacité de se déplacer pour un cours en présentiel.
+          En complément des cours traditionnels, ils ont lieu à distance (via WhatsApp, FaceTime, Zoom, etc), avec votre smartphone ou tablette, quelque soit votre niveau ou votre âge.
+          Pas besoin d’équipement particulier.<br />
+          Ces cours sont accessibles de façon régulière ou ponctuelle, en cas d’incapacité de se déplacer pour un cours en présentiel.<br />
           Des fichiers audios vous sont transmis pour compléter le travail personnel.
         </p>
       </div>

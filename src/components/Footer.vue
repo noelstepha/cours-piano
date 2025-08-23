@@ -4,8 +4,7 @@
     <div>
       <div class="text-xl font-bold mb-3">Explorer</div>
       <router-link to="/" class="inline-block my-1">Accueil</router-link><br />
-      <router-link to="/children" class="inline-block my-1">Cours enfants</router-link><br />
-      <router-link to="/adult" class="inline-block my-1">Cours adultes et ados</router-link><br />
+      <router-link to="/adult" class="inline-block my-1">Cours adultes</router-link><br />
       <router-link to="/pricing" class="inline-block my-1">Tarifs / Horaires</router-link><br />
       <router-link to="/contact" class="inline-block my-1">Contact</router-link><br />
     </div>
